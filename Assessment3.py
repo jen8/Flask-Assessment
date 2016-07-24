@@ -76,8 +76,6 @@ def get_melon_price(melon_name):
         return "No price found"
 
 
-
-
 def word_length_sorted(words):
     """Return list of word-lengths and words.
 
@@ -94,15 +92,12 @@ def word_length_sorted(words):
         [(1, ['a']), (2, ['an', 'ok']), (3, ['day']), (5, ['apple'])]
     """
 
-    words = ["ok", "an", "apple", "a", "day"]
-
+    word_pair = []
     for word in words:
-        word_pair = (len(word),[word])
-        #if len(word) == len(word):
-        #    [word].append(word)
-        #word_set.add(word_pair)
+        val = (len(word),[word])
+        word_pair.append(val)
+    
     return word_pair
-
 
 
 def translate_to_pirate_talk(phrase):
